@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarDatos">
+
+    <Button
+        android:id="@+id/btnatras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="98dp"
+        android:backgroundTint="#7CB342"
+        android:text="Atras"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtActualizacion"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Actualizacion de Contactos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnatras" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreActualizar"
+        app:layout_constraintStart_toStartOf="@+id/txtNombreActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btnatras" />
+
+    <TextView
+        android:id="@+id/txtNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Numero Telefonico"
+        app:layout_constraintBottom_toTopOf="@+id/txtTelefonoActualizar"
+        app:layout_constraintStart_toStartOf="@+id/txtTelefonoActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreActualizar" />
+
+    <TextView
+        android:id="@+id/txtNombre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Notas"
+        app:layout_constraintBottom_toTopOf="@+id/txtNotasActualizar"
+        app:layout_constraintStart_toStartOf="@+id/txtNotasActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefonoActualizar" />
+
+    <EditText
+        android:id="@+id/txtNombreActualizar"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="23dp"
+        android:background="#0B0B0B"
+        android:backgroundTint="#BAEA87"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <EditText
+        android:id="@+id/txtTelefonoActualizar"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="37dp"
+        android:background="#BAEA87"
+        android:backgroundTint="#BAEA87"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
+
+    <EditText
+        android:id="@+id/txtNotasActualizar"
+        android:layout_width="285dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="24dp"
+        android:background="#BAEA87"
+        android:backgroundTint="#BAEA87"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnactualiza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre3" />
+
+    <Button
+        android:id="@+id/btnactualiza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="189dp"
+        android:backgroundTint="#00ACC1"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNotasActualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
